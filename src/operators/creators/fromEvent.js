@@ -1,4 +1,4 @@
-import { fromEvent } from 'rxjs/internal/observable/fromEvent';
+import { fromEvent } from 'rxjs';
 import observer from '../../observers';
 
 // 第一个参数为target，可以为以下中的一种：

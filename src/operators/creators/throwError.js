@@ -1,4 +1,4 @@
-import { throwError } from 'rxjs/internal/observable/throwError';
+import { throwError } from 'rxjs';
 import observer from '../../observers';
 
 // 这个仅仅用来发出error通知，可以强行执行observer error操作

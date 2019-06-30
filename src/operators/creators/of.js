@@ -1,4 +1,4 @@
-import { of } from 'rxjs/internal/observable/of';
+import { of } from 'rxjs';
 import observer from '../../observers'
 
 const source1$ = of(1,2,3);

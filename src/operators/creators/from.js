@@ -1,4 +1,4 @@
-import { from } from 'rxjs/internal/observable/from';
+import { from } from 'rxjs';
 import observer from '../../observers';
 import { getData } from '../../util';
 

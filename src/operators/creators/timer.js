@@ -1,4 +1,4 @@
-import { timer } from 'rxjs/internal/observable/timer';
+import { timer } from 'rxjs';
 import observer from '../../observers';
 
 // 第一个参数表示在发出第一个值0之前的延迟时间，如果只传一个参数，就等同于setTimeout功能

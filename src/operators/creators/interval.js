@@ -1,4 +1,4 @@
-import { interval } from 'rxjs/internal/observable/interval';
+import { interval } from 'rxjs';
 import observer from '../../observers';
 
 // 第一个参数可选，表示时间间隔，默认为0，就是每1毫秒返回一个值，递增

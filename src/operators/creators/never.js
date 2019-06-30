@@ -1,4 +1,4 @@
-import { never } from 'rxjs/internal/observable/never';
+import { never } from 'rxjs';
 import observer from '../../observers';
 
 // 不发出东西，不结束，也不error，没有任何反应
