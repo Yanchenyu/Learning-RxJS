@@ -1,3 +1,7 @@
+/**
+ * @description 动态引入转换类操作符
+ */
+
 function creators(name) {
     return import(`./${name}`)
 }
@@ -15,4 +19,4 @@ function creators(name) {
 // creators('windowCount')
 // creators('windowTime')
 // creators('windowWhen')
-creators('windowToggle')
+// creators('windowToggle')
