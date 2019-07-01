@@ -13,3 +13,6 @@ function creators(name) {
 // creators('bufferToggle')
 // creators('window')
 // creators('windowCount')
+// creators('windowTime')
+// creators('windowWhen')
+creators('windowToggle')
