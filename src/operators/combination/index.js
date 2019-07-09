@@ -11,5 +11,6 @@ function creators(name) {
 // creators('race');
 // creators('forkJoin');
 // creators('zip');
-creators('combineLatest');
+// creators('combineLatest');
 // creators('withLatestFrom');
+creators('combineAll')
