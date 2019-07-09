@@ -10,4 +10,6 @@ function creators(name) {
 // creators('merge');
 // creators('race');
 // creators('forkJoin');
-creators('zip');
+// creators('zip');
+creators('combineLatest');
+// creators('withLatestFrom');
