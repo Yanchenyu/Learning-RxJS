@@ -1,9 +1,13 @@
-import { interval } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { interval, of } from 'rxjs';
+import { map, combineAll, take } from 'rxjs/operators';
 import observer from '../../observers'
 
 interval(1000).pipe(
-    map(x => interval(1000).pipe(
-        map(y => `${x} ${y}`)
-    ))
+    take(2),
+    map(x => of(100).pipe(
+        map(y => `x: ${x}, y: ${y}`),
+    )),
+    combineAll()
 ).subscribe(observer)
+
+
