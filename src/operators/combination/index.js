@@ -14,3 +14,5 @@ function creators(name) {
 // creators('combineLatest');
 // creators('withLatestFrom');
 creators('combineAll')
+// creators('concatAll');
+// creators('mergeAll');

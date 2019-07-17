@@ -1,9 +1,10 @@
 import { interval } from 'rxjs';
+import { take } from 'rxjs/operators';
 import observer from '../../observers';
 
 // 第一个参数可选，表示时间间隔，默认为0，就是每1毫秒返回一个值，递增
 
-const source$ = interval(1000);
+const source$ = interval(1000).pipe(take(10));
 source$.subscribe(observer);
 // 0
 // 1

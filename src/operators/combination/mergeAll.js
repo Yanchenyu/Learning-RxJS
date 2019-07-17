@@ -1,5 +1,5 @@
 import { interval, of } from 'rxjs';
-import { map, combineAll, take } from 'rxjs/operators';
+import { map, mergeAll, take } from 'rxjs/operators';
 import observer from '../../observers'
 
 interval(1000).pipe(
@@ -8,7 +8,7 @@ interval(1000).pipe(
         take(2),
         map(y => `x: ${x}, y: ${y}`)
     )),
-    combineAll()
+    mergeAll()
 ).subscribe(observer)
 
 /**
@@ -16,12 +16,15 @@ interval(1000).pipe(
  * 
  * interval:      0    1    2    3    4    5
  * 
- * take:          0    1
+ * take: x        0    1
  *                |    |
- * map:           |---------0         1
+ * map:  y        |---------0         1
  *                     |
- *                     |---------0          1
+ *       y             |---------0          1
  * 
- * combineAll                   0,0   0,1   0,1
- *                              1,0   1,0   1,1
+ * mergeAll                 0,0       0,1
+ *                              1,0        1,1
  */   
+
+
+// mergeAll其实和merge一致，有值就输出

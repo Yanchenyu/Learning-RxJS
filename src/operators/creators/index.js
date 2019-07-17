@@ -13,7 +13,7 @@ function creators(name) {
 // creators('from')
 // creators('fromPromise')
 // creators('timer')
-// creators('interval')
+creators('interval')
 // creators('empty')
 // creators('throwError')
 // creators('never')
