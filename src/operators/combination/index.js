@@ -13,6 +13,6 @@ function creators(name) {
 // creators('zip');
 // creators('combineLatest');
 // creators('withLatestFrom');
-creators('combineAll')
+// creators('combineAll')
 // creators('concatAll');
 // creators('mergeAll');
