@@ -11,7 +11,7 @@ const CounterView = ({count, onIncrement, onDecrement}) => (
     </div>
 )
 
-const HOCComponent = (WrapComponent, observableFactory, initialState) => {
+const HOCFactory = (WrapComponent, observableFactory, initialState) => {
     return class extends Component {
         constructor(props) {
             super(props);
@@ -29,7 +29,7 @@ const HOCComponent = (WrapComponent, observableFactory, initialState) => {
     }
 }
 
-const App = HOCComponent(CounterView, () => {
+const App = HOCFactory(CounterView, () => {
     const counter$ = new BehaviorSubject(0);
     return counter$.pipe(
         scan((seed, value) => {
