@@ -7,4 +7,5 @@ function creators(name) {
 }
 
 // creators('clickTimes');
-creators('boxDrag');
+// creators('boxDrag');
+creators('counterClick');
